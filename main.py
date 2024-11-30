@@ -1,4 +1,5 @@
 # Step 1: Import Libraries and Load the Model
+import streamlit as st
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.datasets import imdb
@@ -25,7 +26,7 @@ def preprocess_text(text):
     return padded_review
 
 
-import streamlit as st
+
 ## streamlit app
 # Streamlit app
 st.title('IMDB Movie Review Sentiment Analysis')
